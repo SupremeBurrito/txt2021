@@ -1,0 +1,36 @@
+<html> 
+	<head>
+		<title> Second Challenge </title> 
+	</head>
+</html>
+<body>
+	<h1> Number Aranger-aton</h1>
+	<form id="form" action ="/hello.html" method="GET">
+	<div>
+		<label for="valueA"> Input value1 </label>
+		<input type="number" id="valueA" name="valueA"/>
+	</div>
+	<div>
+		<label for="valueB"> Input value2</label>
+		<input type="number" id="valueB" name="valueB"/>
+	</div>
+	<div>
+		<label for="valueC"> Input value3</label>
+		<input type="number" id="valueC" name="valueC"/>
+	</div>
+	<div>
+		<button onclick="myFunction()" id = "btn1"> Arrange </button>
+	</div>
+	</form>
+</body> 
+	<script>
+
+	function myFunction() {
+	var value = [document.getElementByID("valueA").value, document.getElementByID("valueB").value,document.getElementByID("valueC").value];
+	value.sort(function(a,b) {
+		 	return a - b;
+		 });
+		 alert(value);
+	}
+</script>
+</html> 
